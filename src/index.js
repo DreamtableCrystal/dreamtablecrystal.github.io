@@ -10,7 +10,7 @@ let Box = new DiceBox("#dice-box", {
 });
 
 Box.init().then(async (world) => {
-  Box.roll(["d20", "d12", "d10", "d8", "d6", "d4"]);
+  Box.roll(["1d20", "1d12", "1d10", "1d8", "1d6", "1d4"]);
 });
 
 const button = document.getElementById("rollem");
@@ -33,7 +33,7 @@ function get_random(list) {
 }
 
 button.addEventListener("click", (e) => {
-  Box.roll(["d20", "d12", "d10", "d8", "d6", "d4"], {
+  Box.roll(["1d20", "1d12", "1d10", "1d8", "1d6", "1d4"], {
     themeColor: get_random(colors)
   });
 });
